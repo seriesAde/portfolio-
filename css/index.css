@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0px 5vw;
+    border: solid black;
+    box-sizing: border-box;
+  }
+  
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    color: gray;
+  }
+  
+  .sidebar {
+    width: 100%;
+    max-width: 25vw;
+    padding: 5% 0px;
+    background-color: whitesmoke;
+    height: 82.5vh;
+    overflow-y: auto;
+    scrollbar-color: white gray;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  #profile_image {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  #name {
+    margin-bottom: 0;
+    color: black;
+  }
+  
+  .profile_group {
+    margin-bottom: 10%;
+  }
+  
+  .profile_group a {
+    text-decoration: none;
+    color: lightskyblue;
+  }
+  
+  .profile_links li {
+    list-style: none;
+    margin: 10%;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: grey;
+  }
+  
+  a:hover {
+    color: black;
+    text-decoration: underline lightblue 2px;
+    transition: 1s;
+  }
+  
+  .hero {
+    margin-left: 0;
+    margin-top: 90vh;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .hero {
+      margin-left: 25vw;
+      width: 75vw;
+      margin-top: 0;
+    }
+  }
+  
+  .hero_content {
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  #bg_image {
+    width: 100%;
+    max-width: 800px;
+    height: 95vh;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #hero_h1 {
+    font-size: 2vw;
+    text-align: center;
+    color: black;
+    margin: 2rem 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    /* left: 40%; */
+  }
+  
+  #downloadBtn {
+    border: solid lightskyblue 0.7px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: transparent;
+    font-size: 1rem;
+  }
+  
+  .about_me {
+    text-align: left;
+    font-size: 1.25rem;
+    padding: 20px;
+  }
+  
+  .about_me h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .about_me p {
+    line-height: 2rem;
+  }
+  
+  #items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  
+  #items li {
+    list-style: none;
+    font-size: 3rem;
+    border-bottom: solid lightblue 0.8px;
+  }
+  
+  #edu span {
+    margin: 0 1rem;
+  }
+  
+  #work {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  
+  iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 50vh;
+    padding: 10px 0;
+  }
+  
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        color: gray;
+        justify-content: center;
+        
+    }
+    .sidebar {
+    /* display: flex; */
+    justify-content: space-around;
+      position: relative;
+      padding: 0 5%;
+      width: 100%;
+      height: auto;
+      max-height: unset;
+      margin-bottom: 10px;
+     
+    }
+  
+    #hero_h1 {
+      font-size: 1.5rem;
+      left: auto;
+      top: auto;
+      position: static;
+    }
+  
+    .hero {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  
+    iframe {
+      height: 50vh;
+    }
+  
+    #items li {
+      font-size: 2rem;
+    }
+  }
+  
